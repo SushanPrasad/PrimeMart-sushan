@@ -1,0 +1,42 @@
+{
+  "name": "shop",
+  "version": "1.0.0",
+  "description": "This is a MERN stack application",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix ecommerce",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d",
+    "build": "npm install && npm install --prefix ecommerce && npm run build --prefix ecommerce"
+  },
+  "author": "Sushan Prasad",
+  "license": "MIT",
+  "dependencies": {
+    "@paypal/react-paypal-js": "^8.5.0",
+    "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "npm-git-install": "^0.3.0",
+    "postman": "^0.2.0",
+    "react-redux": "^9.1.2",
+    "react-router-bootstrap": "^0.26.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.3"
+  }
+}

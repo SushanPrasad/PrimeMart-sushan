@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Your Extension Name",
+    "version": "1.0",
+    "permissions": [
+      "activeTab"
+    ],
+    "web_accessible_resources": [
+      "src/assets/styles/bootstrap.css",
+      "src/assets/styles/index.css",
+      "src/assets/logo.png",
+      "src/assets/locales/en/translation.json"
+    ]
+}
